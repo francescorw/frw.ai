@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+    <title>frw</title>
+    <style type="text/css">
+      body {
+        background-color: black;
+        font-family: 'Roboto Mono', monospace;;
+      }
+
+      .text {
+        color: #006400
+      }
+
+      .blinking-cursor {
+        font-weight: 100;
+        font-size: 30px;
+        color: #2E3D48;
+        -webkit-animation: 1s blink step-end infinite;
+        -moz-animation: 1s blink step-end infinite;
+        -ms-animation: 1s blink step-end infinite;
+        -o-animation: 1s blink step-end infinite;
+        animation: 1s blink step-end infinite;
+      }
+
+      @keyframes "blink" {
+        from, to {
+          color: transparent;
+        }
+        50% {
+          color: white;
+        }
+      }
+
+      @-moz-keyframes blink {
+        from, to {
+          color: transparent;
+        }
+        50% {
+          color: white;
+        }
+      }
+
+      @-webkit-keyframes "blink" {
+        from, to {
+          color: transparent;
+        }
+        50% {
+          color: white;
+        }
+      }
+
+      @-ms-keyframes "blink" {
+        from, to {
+          color: transparent;
+        }
+        50% {
+          color: white;
+        }
+      }
+
+      @-o-keyframes "blink" {
+        from, to {
+          color: transparent;
+        }
+        50% {
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <span class="text">$</span><span class="blinking-cursor">|</span>
+  </body>
+</html>
